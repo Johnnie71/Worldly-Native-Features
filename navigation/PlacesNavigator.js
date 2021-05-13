@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 const PlacesNavigator = props => {
 
-    const Stack = createStackNavigator();
+    const PlacesStackNavigator = createStackNavigator();
 
     return (
         <NavigationContainer >
