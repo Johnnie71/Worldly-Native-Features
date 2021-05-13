@@ -4,3 +4,5 @@ import { NavigationContainer } from '@react-navigation/native';
 const PlacesNavigator = props => {
 
 };
+
+export default PlacesNavigator;
