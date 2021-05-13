@@ -1,5 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import PlacesListScreen from '../screens/PlacesListScreen';
 
 const PlacesNavigator = props => {
 
