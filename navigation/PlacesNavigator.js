@@ -5,9 +5,9 @@ import PlaceDetailScreen from '../screens/PlaceDetailScreen';
 import NewPlaceScreen from '../screens/NewPlaceScreen';
 import MapScreen from '../screens/MapScreen';
 
-const PlacesNavigator = props => {
+const PlacesStackNavigator = createStackNavigator();
 
-    const PlacesStackNavigator = createStackNavigator();
+const PlacesNavigator = props => {
 
     return (
         <NavigationContainer >
