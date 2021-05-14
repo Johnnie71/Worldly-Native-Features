@@ -12,7 +12,7 @@ const PlacesStackNavigator = createStackNavigator();
 
 const defaultNavigationOptions = {
     headerStyle: {
-        
+        backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
     }
 };
 
