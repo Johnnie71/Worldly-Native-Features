@@ -11,7 +11,9 @@ import Colors from '../constants/Colors';
 const PlacesStackNavigator = createStackNavigator();
 
 const defaultNavigationOptions = {
-    
+    headerStyle: {
+        
+    }
 };
 
 const PlacesNavigator = props => {
