@@ -7,6 +7,10 @@ import MapScreen from '../screens/MapScreen';
 
 const PlacesStackNavigator = createStackNavigator();
 
+const defaultNavigationOptions = {
+
+};
+
 const PlacesNavigator = props => {
 
     return (
