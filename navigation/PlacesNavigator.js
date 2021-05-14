@@ -1,3 +1,5 @@
+import { Platform } from 'react-native';
+
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import PlacesListScreen from '../screens/PlacesListScreen';
@@ -8,7 +10,7 @@ import MapScreen from '../screens/MapScreen';
 const PlacesStackNavigator = createStackNavigator();
 
 const defaultNavigationOptions = {
-
+    
 };
 
 const PlacesNavigator = props => {
