@@ -8,3 +8,5 @@ const PlaceDetailScreen = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default PlaceDetailScreen;
