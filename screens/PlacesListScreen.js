@@ -4,3 +4,5 @@ import { View, Text, Stylesheet } from 'react-native';
 const PlacesListScreen = props => {
 
 };
+
+export default PlacesListScreen;
