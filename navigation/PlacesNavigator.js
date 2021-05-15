@@ -13,7 +13,8 @@ const PlacesStackNavigator = createStackNavigator();
 const defaultNavigationOptions = {
     headerStyle: {
         backgroundColor: Platform.OS === 'android' ? Colors.primary : ''
-    }
+    },
+    headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
 };
 
 const PlacesNavigator = props => {
