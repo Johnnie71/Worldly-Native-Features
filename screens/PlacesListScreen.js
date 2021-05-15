@@ -10,4 +10,8 @@ const PlacesListScreen = props => {
     )
 };
 
+const styles = Stylesheet.create({
+    
+})
+
 export default PlacesListScreen;
