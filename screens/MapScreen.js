@@ -8,3 +8,5 @@ const MapScreen = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default MapScreen;
