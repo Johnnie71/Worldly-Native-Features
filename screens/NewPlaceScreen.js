@@ -8,3 +8,5 @@ const NewPlaceScreen = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default NewPlaceScreen;
