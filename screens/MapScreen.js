@@ -12,7 +12,10 @@ const MapScreen = props => {
 };
 
 export const screenOptions = navData => {
-    
+
+    return {
+        headerTitle: 'Map Screen',
+    }
 }
 
 const styles = StyleSheet.create({
