@@ -13,6 +13,9 @@ const PlaceDetailScreen = props => {
 
 export const screenOptions = navData => {
 
+    return {
+        headerTitle: 'Place Details'
+    }
 };
 
 const styles = StyleSheet.create({
