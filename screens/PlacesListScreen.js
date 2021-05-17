@@ -12,6 +12,9 @@ const PlacesListScreen = props => {
 
 export const screenOptions = navData => {
 
+    return {
+        headerTitle: 'Places List',
+    }
 };
 
 const styles = Stylesheet.create({
