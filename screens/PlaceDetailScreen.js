@@ -11,6 +11,10 @@ const PlaceDetailScreen = props => {
 
 };
 
+export const screenOptions = navData => {
+
+};
+
 const styles = StyleSheet.create({
 
 });
