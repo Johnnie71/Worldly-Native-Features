@@ -10,6 +10,10 @@ const PlacesListScreen = props => {
     )
 };
 
+export const screenOptions = navData => {
+
+};
+
 const styles = Stylesheet.create({
     
 })
