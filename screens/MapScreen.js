@@ -11,6 +11,10 @@ const MapScreen = props => {
 
 };
 
+export const screenOptions = navData => {
+    
+}
+
 const styles = StyleSheet.create({
 
 });
