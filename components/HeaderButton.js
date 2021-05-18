@@ -7,7 +7,7 @@ const CustomHeaderButton = props => {
 
     return (
         <View>
-            <HeaderButton  />
+            <HeaderButton {...props}  />
         </View>
     )
 
