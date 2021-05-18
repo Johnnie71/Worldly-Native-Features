@@ -8,3 +8,5 @@ const HeaderButton = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default HeaderButton;
