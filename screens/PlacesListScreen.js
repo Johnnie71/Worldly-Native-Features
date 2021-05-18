@@ -17,7 +17,7 @@ export const screenOptions = navData => {
 
     return {
         headerTitle: 'Places List',
-        headerRight: () => <HeaderButtons>
+        headerRight: () => <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
             <Item />
         </HeaderButtons>
     }
