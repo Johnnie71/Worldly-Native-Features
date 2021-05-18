@@ -4,11 +4,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 import Colors from '../constants/Colors';
 
-const HeaderButton = props => {
+const CustomHeaderButton = props => {
 
     return (
         <View>
-            <Button />
+            <Button  />
         </View>
     )
 
