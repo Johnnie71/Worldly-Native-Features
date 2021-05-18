@@ -7,7 +7,7 @@ const CustomHeaderButton = props => {
 
     return (
         <View>
-            <HeaderButton {...props} IconComponent={Ionicons} />
+            <HeaderButton {...props} IconComponent={Ionicons} iconSize={23}/>
         </View>
     )
 
