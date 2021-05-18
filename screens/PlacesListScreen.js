@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Stylesheet } from 'react-native';
-import { HeaderButton, Item } from 'react-navigation-header-buttons';
+import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
 import CustomHeaderButton from '../components/HeaderButton';
 
@@ -17,6 +17,7 @@ export const screenOptions = navData => {
 
     return {
         headerTitle: 'Places List',
+        headerRight: () => <Head
     }
 };
 
