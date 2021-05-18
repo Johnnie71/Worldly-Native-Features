@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Button, StyleSheet } from 'react-native';
-import {} from ''
+import { Ionicons } from '@expo/vector-icons';
 
 const HeaderButton = props => {
 
