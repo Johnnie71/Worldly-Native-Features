@@ -17,11 +17,14 @@ export const screenOptions = navData => {
 
     return {
         headerTitle: 'Places List',
-        headerRight: () => <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
-            <Item 
-                title='Add Place'
-            />
-        </HeaderButtons>
+        headerRight: () => (
+            <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+                <Item 
+                    title='Add Place'
+                    iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
+                />
+            </HeaderButtons>
+        )
     }
 };
 
