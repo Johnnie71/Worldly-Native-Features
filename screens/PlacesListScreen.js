@@ -22,6 +22,7 @@ export const screenOptions = navData => {
                 <Item 
                     title='Add Place'
                     iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
+                    onPress={() => {}}
                 />
             </HeaderButtons>
         )
