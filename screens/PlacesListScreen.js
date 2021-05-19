@@ -23,7 +23,7 @@ export const screenOptions = navData => {
                     title='Add Place'
                     iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
                     onPress={() => {
-                        navData.navigation.navigate()
+                        navData.navigation.navigate('New Place')
                     }}
                 />
             </HeaderButtons>
