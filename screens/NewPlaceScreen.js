@@ -24,7 +24,9 @@ export const screenOptions = navData => {
 }
 
 const styles = StyleSheet.create({
-
+    form: {
+        
+    }
 });
 
 export default NewPlaceScreen;
