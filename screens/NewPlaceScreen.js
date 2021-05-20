@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet} from 'react-native';
+import { ScrollView, View, Text, TextInput, StyleSheet} from 'react-native';
 
 const NewPlaceScreen = props => {
 
