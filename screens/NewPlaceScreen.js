@@ -9,7 +9,7 @@ const NewPlaceScreen = props => {
             <View>
                 <Text>Title</Text>
                 <TextInput />
-                <Button title='Save Place' color={Colors.primary} />
+                <Button title='Save Place' color={Colors.primary} onPress={() => {}} />
             </View>
         </ScrollView>
     )
