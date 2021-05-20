@@ -14,7 +14,7 @@ const NewPlaceScreen = props => {
 export const screenOptions = navData => {
 
     return {
-        headerTitle: 'New Place Screen',
+        headerTitle: 'Add Place',
     }
 }
 
