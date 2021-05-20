@@ -4,10 +4,12 @@ import { ScrollView, View, Text, TextInput, StyleSheet} from 'react-native';
 const NewPlaceScreen = props => {
 
     return (
-        <View>
-            <Text>Title</Text>
-            <TextInput />
-        </View>
+        <ScrollView>
+            <View>
+                <Text>Title</Text>
+                <TextInput />
+            </View>
+        </ScrollView>
     )
 
 };
