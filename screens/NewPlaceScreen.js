@@ -6,6 +6,7 @@ const NewPlaceScreen = props => {
     return (
         <View>
             <Text>Title</Text>
+            <TextInput />
         </View>
     )
 
