@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, View, Text, Button, TextInput, StyleSheet} from 'react-native';
+import Colors from '../constants/Colors';
 
 const NewPlaceScreen = props => {
 
@@ -8,7 +9,7 @@ const NewPlaceScreen = props => {
             <View>
                 <Text>Title</Text>
                 <TextInput />
-                <Button title='Save Place'/>
+                <Button title='Save Place' color={Colors.primary} />
             </View>
         </ScrollView>
     )
