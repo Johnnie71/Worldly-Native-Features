@@ -8,6 +8,7 @@ const NewPlaceScreen = props => {
             <View>
                 <Text>Title</Text>
                 <TextInput />
+                <Button title='Save Place'/>
             </View>
         </ScrollView>
     )
