@@ -5,7 +5,7 @@ const NewPlaceScreen = props => {
 
     return (
         <View>
-            <Text>New Place Screen</Text>
+            <Text>Title</Text>
         </View>
     )
 
