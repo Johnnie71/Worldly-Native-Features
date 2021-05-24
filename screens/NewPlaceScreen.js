@@ -9,7 +9,11 @@ const NewPlaceScreen = props => {
             <View style={styles.form}>
                 <Text>Title</Text>
                 <TextInput />
-                <Button title='Save Place' color={Colors.primary} onPress={() => {}} />
+                <Button 
+                    title='Save Place' 
+                    color={Colors.primary} 
+                    onPress={() => {}}
+                />
             </View>
         </ScrollView>
     )
