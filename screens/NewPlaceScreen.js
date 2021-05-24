@@ -30,6 +30,9 @@ export const screenOptions = navData => {
 const styles = StyleSheet.create({
     form: {
         
+    },
+    label: {
+        
     }
 });
 
