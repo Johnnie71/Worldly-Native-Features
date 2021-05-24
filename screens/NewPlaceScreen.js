@@ -7,7 +7,7 @@ const NewPlaceScreen = props => {
     return (
         <ScrollView>
             <View style={styles.form}>
-                <Text>Title</Text>
+                <Text style={styles.label}>Title</Text>
                 <TextInput />
                 <Button 
                     title='Save Place' 
