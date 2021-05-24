@@ -32,6 +32,9 @@ const styles = StyleSheet.create({
         
     },
     label: {
+
+    },
+    textInput: {
         
     }
 });
