@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         margin: 30
     },
     label: {
-
+        fontSize: 18,
     },
     textInput: {
 
