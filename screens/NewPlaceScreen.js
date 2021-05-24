@@ -29,13 +29,13 @@ export const screenOptions = navData => {
 
 const styles = StyleSheet.create({
     form: {
-        
+        margin: 30
     },
     label: {
 
     },
     textInput: {
-        
+
     }
 });
 
