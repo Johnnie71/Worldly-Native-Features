@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     textInput: {
         borderBottomColor: '#ccc',
         borderBottomWidth: 1,
+        marginBottom: 15
     }
 });
 
