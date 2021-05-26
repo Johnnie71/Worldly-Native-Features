@@ -14,6 +14,10 @@ const NewPlaceScreen = props => {
 
     const [titleValue, setTitleValue] = useState('');
 
+    const titleChangeHandler = text => {
+        setTitleValue(text);
+    };
+
     return (
         <ScrollView>
             <View style={styles.form}>
