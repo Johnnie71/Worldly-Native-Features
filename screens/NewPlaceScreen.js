@@ -7,6 +7,7 @@ import {
     TextInput, 
     StyleSheet
 } from 'react-native';
+
 import Colors from '../constants/Colors';
 
 const NewPlaceScreen = props => {
