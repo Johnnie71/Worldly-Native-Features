@@ -12,6 +12,8 @@ import Colors from '../constants/Colors';
 
 const NewPlaceScreen = props => {
 
+    const [titleValue, setTitleValue] = useState();
+
     return (
         <ScrollView>
             <View style={styles.form}>
