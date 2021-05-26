@@ -1,5 +1,12 @@
 import React from 'react';
-import { ScrollView, View, Text, Button, TextInput, StyleSheet} from 'react-native';
+import { 
+    ScrollView, 
+    View, 
+    Text, 
+    Button, 
+    TextInput, 
+    StyleSheet
+} from 'react-native';
 import Colors from '../constants/Colors';
 
 const NewPlaceScreen = props => {
