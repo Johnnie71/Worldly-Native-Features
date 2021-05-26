@@ -12,7 +12,7 @@ import Colors from '../constants/Colors';
 
 const NewPlaceScreen = props => {
 
-    const [titleValue, setTitleValue] = useState();
+    const [titleValue, setTitleValue] = useState('');
 
     return (
         <ScrollView>
