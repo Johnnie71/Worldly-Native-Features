@@ -18,6 +18,10 @@ const NewPlaceScreen = props => {
         setTitleValue(text);
     };
 
+    const savePlaceHandler = () => {
+
+    };
+
     return (
         <ScrollView>
             <View style={styles.form}>
