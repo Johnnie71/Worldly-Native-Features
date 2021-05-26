@@ -19,7 +19,7 @@ const NewPlaceScreen = props => {
     };
 
     const savePlaceHandler = () => {
-
+        
     };
 
     return (
