@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import {} from 'react-redux';
 import PlacesNavigator from './navigation/PlacesNavigator';
 
