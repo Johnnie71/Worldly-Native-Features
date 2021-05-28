@@ -5,7 +5,7 @@ import PlacesNavigator from './navigation/PlacesNavigator';
 import placesReducer from './store/places-reducer';
 
 const rootReducer = combineReducers({
-
+  places: placesReducer
 });
 
 export default function App() {
