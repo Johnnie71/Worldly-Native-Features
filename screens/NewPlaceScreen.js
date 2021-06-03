@@ -23,7 +23,7 @@ const NewPlaceScreen = props => {
     };
 
     const savePlaceHandler = () => {
-        
+        dispatch(placesActions.addPlace(titleValue))
     };
 
     return (
