@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   places: placesReducer
 });
 
-const store = createStore()
+const store = createStore(rootReducer, applyMiddleware())
 
 export default function App() {
 
