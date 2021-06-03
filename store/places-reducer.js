@@ -6,7 +6,9 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case ADD_PLACE
+        case ADD_PLACE:
+            default:
+                return state;
     }
     return state;
 }
