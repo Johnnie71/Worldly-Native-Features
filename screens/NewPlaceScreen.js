@@ -15,6 +15,8 @@ const NewPlaceScreen = props => {
 
     const [titleValue, setTitleValue] = useState('');
 
+    const dispatch = useDispatch();
+
     const titleChangeHandler = text => {
         setTitleValue(text);
     };
