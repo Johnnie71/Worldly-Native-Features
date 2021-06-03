@@ -1,4 +1,5 @@
 import { ADD_PLACE } from "./places-actions";
+import Place from '../models/place';
 
 const initialState = {
     places: []
@@ -7,7 +8,7 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case ADD_PLACE:
-            
+
             default:
                 return state;
     }
