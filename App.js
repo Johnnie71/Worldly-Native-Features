@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
   places: placesReducer
 });
 
-const store = createStore(rootReducer, applyMiddleware())
+const store = createStore(rootReducer, applyMiddleware(ReduxThunk))
 
 export default function App() {
 
