@@ -7,6 +7,7 @@ import {
     TextInput, 
     StyleSheet
 } from 'react-native';
+import { useDispatch } from 'react-redux';
 
 import Colors from '../constants/Colors';
 
