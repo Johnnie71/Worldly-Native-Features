@@ -8,6 +8,8 @@ const rootReducer = combineReducers({
   places: placesReducer
 });
 
+const store = createStore()
+
 export default function App() {
 
   return (
