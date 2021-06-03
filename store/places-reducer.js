@@ -11,7 +11,7 @@ export default (state = initialState, action) => {
             const newPlace = new Place(new Date().toString(), action.placeData.title);
             return {
                 places: state.places.concat(newPlace)
-            }
+            };
             default:
                 return state;
     }
