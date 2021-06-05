@@ -7,7 +7,7 @@ import CustomHeaderButton from '../components/HeaderButton';
 
 const PlacesListScreen = props => {
 
-    const places = useSelector()
+    const places = useSelector(state => state.places)
 
     return (
         <FlatList />
