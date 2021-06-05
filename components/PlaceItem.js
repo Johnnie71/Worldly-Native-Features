@@ -5,3 +5,7 @@ import Colors from '../constants/Colors';
 const PlaceItem = props => {
 
 };
+
+const styles = StyleSheet.create({
+
+});
