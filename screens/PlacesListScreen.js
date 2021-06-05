@@ -7,6 +7,8 @@ import CustomHeaderButton from '../components/HeaderButton';
 
 const PlacesListScreen = props => {
 
+    const places = useSelector()
+
     return (
         <FlatList />
     );
