@@ -5,7 +5,7 @@ import Colors from '../constants/Colors';
 const PlaceItem = props => {
 
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={props.onSelect} >
             <Image style={styles.image} source={{ uri: props.image }}/>
         </TouchableOpacity>
     );
