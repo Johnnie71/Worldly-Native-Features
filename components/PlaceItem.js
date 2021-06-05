@@ -4,6 +4,10 @@ import Colors from '../constants/Colors';
 
 const PlaceItem = props => {
 
+    return (
+
+    );
+
 };
 
 const styles = StyleSheet.create({
