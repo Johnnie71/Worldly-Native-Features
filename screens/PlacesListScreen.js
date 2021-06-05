@@ -10,7 +10,9 @@ const PlacesListScreen = props => {
     const places = useSelector(state => state.places.places);
 
     return (
-        <FlatList />
+        <FlatList
+            data={places}
+        />
     );
 };
 
