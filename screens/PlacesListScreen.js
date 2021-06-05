@@ -7,9 +7,7 @@ import CustomHeaderButton from '../components/HeaderButton';
 const PlacesListScreen = props => {
 
     return (
-        <View>
-            <Text>Places List Screen</Text>
-        </View>
+        <FlatList />
     )
 };
 
