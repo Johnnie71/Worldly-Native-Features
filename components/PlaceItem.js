@@ -6,7 +6,7 @@ const PlaceItem = props => {
 
     return (
         <TouchableOpacity>
-            
+            <Image />
         </TouchableOpacity>
     );
 
