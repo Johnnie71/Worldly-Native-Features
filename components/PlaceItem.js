@@ -7,6 +7,9 @@ const PlaceItem = props => {
     return (
         <TouchableOpacity onPress={props.onSelect} >
             <Image style={styles.image} source={{ uri: props.image }}/>
+            <View>
+                
+            </View>
         </TouchableOpacity>
     );
 
