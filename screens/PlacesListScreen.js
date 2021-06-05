@@ -8,7 +8,7 @@ const PlacesListScreen = props => {
 
     return (
         <FlatList />
-    )
+    );
 };
 
 export const screenOptions = navData => {
