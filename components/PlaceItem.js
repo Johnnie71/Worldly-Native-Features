@@ -5,7 +5,9 @@ import Colors from '../constants/Colors';
 const PlaceItem = props => {
 
     return (
-
+        <TouchableOpacity>
+            
+        </TouchableOpacity>
     );
 
 };
