@@ -12,6 +12,7 @@ const PlacesListScreen = props => {
     return (
         <FlatList
             data={places}
+            keyExtractor={item => item.id}
         />
     );
 };
