@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Stylesheet, Platform, FlatList } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { useSelector } from 'react-redux'
 
 import CustomHeaderButton from '../components/HeaderButton';
 
