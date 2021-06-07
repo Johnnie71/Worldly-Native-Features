@@ -41,10 +41,11 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start'
     },
     image: {
-        marginLeft: 25,
-        width: 250,
-        justifyContent: 'center',
-        alignItems: 'flex-start'
+       width: 70,
+       height: 70,
+       borderRadius: 35,
+       backgroundColor: Colors.primary,
+       borderWidth: 1
     }
 
 });
