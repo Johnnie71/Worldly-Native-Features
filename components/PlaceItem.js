@@ -17,6 +17,10 @@ const PlaceItem = props => {
 };
 
 const styles = StyleSheet.create({
+    address: {
+        color: '#666',
+        fontSize: 16
+    }
 
 });
 
