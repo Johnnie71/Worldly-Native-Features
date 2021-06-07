@@ -35,7 +35,10 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     infoContainer: {
-        
+        marginLeft: 25,
+        width: 250,
+        justifyContent: 'center',
+        alignItems: 'flex-start'
     }
 
 });
