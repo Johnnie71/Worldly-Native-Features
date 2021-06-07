@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
         color: "#666",
         fontSize: 18,
         marginBottom: 5
+    },
+    placeItem: {
+        
     }
 
 });
