@@ -28,6 +28,11 @@ const styles = StyleSheet.create({
     },
     placeItem: {
         borderBottomColor: '#ccc',
+        borderBottomWidth: 1,
+        paddingVertical: 15,
+        paddingHorizontal: 30,
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 
 });
