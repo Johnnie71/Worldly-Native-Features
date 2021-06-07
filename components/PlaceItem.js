@@ -20,6 +20,11 @@ const styles = StyleSheet.create({
     address: {
         color: '#666',
         fontSize: 16
+    },
+    title: {
+        color: "#666",
+        fontSize: 18,
+        marginBottom: 5
     }
 
 });
