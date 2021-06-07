@@ -39,6 +39,9 @@ const styles = StyleSheet.create({
         width: 250,
         justifyContent: 'center',
         alignItems: 'flex-start'
+    },
+    image: {
+        
     }
 
 });
