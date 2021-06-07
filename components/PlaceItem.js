@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         fontSize: 16
     },
     title: {
-        color: "#666",
+        color: "black",
         fontSize: 18,
         marginBottom: 5
     },
