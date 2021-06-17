@@ -25,7 +25,7 @@ const PlacesListScreen = props => {
                         placeId: itemData.item.id
                     });
                 }}
-            />
+             />
             )}
         />
     );
