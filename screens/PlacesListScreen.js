@@ -19,7 +19,9 @@ const PlacesListScreen = props => {
                 image={null} 
                 title={itemData.item.title}
                 address={null}
-                onSelect={}
+                onSelect={() => {
+                    props.navigation.navigate()
+                }}
             />
             )}
         />
