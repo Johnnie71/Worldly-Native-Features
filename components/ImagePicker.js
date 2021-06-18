@@ -9,3 +9,5 @@ const ImagePicker = props => {
 const styles = StyleSheet.create({
 
 });
+
+export default ImagePicker;
