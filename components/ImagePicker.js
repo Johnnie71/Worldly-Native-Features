@@ -12,7 +12,7 @@ const ImagePicker = props => {
         <View style={styles.imagePicker}>
             <View style={styles.imagePreview}>
                 <Text>No image selected</Text>
-                <Image />
+                <Image style={styles.image} />
             </View>
             <Button
                 title="Take Image"
