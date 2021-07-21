@@ -13,7 +13,11 @@ const ImagePicker = props => {
             <View>
                 <Text>No image selected</Text>
             </View>
-            <Button title="Take Image" color={Colors.primary} onPress={takeImageHandler} />
+            <Button
+                title="Take Image"
+                color={Colors.primary}
+                onPress={takeImageHandler}
+            />
         </View>
     )
 };
