@@ -24,6 +24,15 @@ const ImagePicker = props => {
 };
 
 const styles = StyleSheet.create({
+    imagePicker: {
+
+    },
+    imagePreview: {
+
+    },
+    image: {
+
+    }
 
 });
 
