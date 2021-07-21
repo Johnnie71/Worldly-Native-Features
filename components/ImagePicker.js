@@ -4,6 +4,10 @@ import Colors from '../constants/Colors';
 
 
 const ImagePicker = props => {
+
+    const takeImageHandler = () => {};
+
+
     return (
         <View>
             <View><Text>No image selected</Text></View>
