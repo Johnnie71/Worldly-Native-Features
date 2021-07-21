@@ -5,13 +5,13 @@ import Colors from '../constants/Colors';
 
 const ImagePicker = props => {
 
-    const takeImageHandler = () => {};
+    const takeImageHandler = () => { };
 
 
     return (
         <View>
             <View><Text>No image selected</Text></View>
-            <Button title="Take Image" color={Colors.primary} onPress={takeImageHandler}/>
+            <Button title="Take Image" color={Colors.primary} onPress={takeImageHandler} />
         </View>
     )
 };
