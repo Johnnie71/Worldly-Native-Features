@@ -7,7 +7,6 @@ const ImagePicker = props => {
 
     const takeImageHandler = () => { };
 
-
     return (
         <View style={styles.imagePicker}>
             <View style={styles.imagePreview}>
