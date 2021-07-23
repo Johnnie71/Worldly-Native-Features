@@ -24,7 +24,7 @@ const ImagePicker = props => {
 
 const styles = StyleSheet.create({
     imagePicker: {
-
+        alignItems: 'center'
     },
     imagePreview: {
        width: '100%',
