@@ -1,11 +1,14 @@
 import React from 'react';
 import { View, Button, Text, StyleSheet } from 'react-native';
+import * as ImagePicker from 'expo-image-picker';
 import Colors from '../constants/Colors';
 
 
 const ImagePicker = props => {
 
-    const takeImageHandler = () => { };
+    const takeImageHandler = () => { 
+
+    };
 
     return (
         <View style={styles.imagePicker}>
