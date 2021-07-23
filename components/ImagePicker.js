@@ -7,7 +7,7 @@ import Colors from '../constants/Colors';
 const ImgPicker = props => {
 
     const takeImageHandler = () => { 
-
+        ImagePicker.launchCameraAsync();
     };
 
     return (
