@@ -37,6 +37,7 @@ const NewPlaceScreen = props => {
                     onChangeText={titleChangeHandler}
                     value={titleValue}
                 />
+                <ImagePicker />
                 <Button 
                     title='Save Place' 
                     color={Colors.primary} 
