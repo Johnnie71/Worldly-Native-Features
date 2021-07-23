@@ -6,6 +6,10 @@ import Colors from '../constants/Colors';
 
 const ImgPicker = props => {
 
+    const verifyPermissions = () => {
+        
+    }
+
     const takeImageHandler = () => { 
         ImagePicker.launchCameraAsync();
     };
