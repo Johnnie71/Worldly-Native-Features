@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, Text, StyleSheet } from 'react-native';
+import { View, Button, Text, Image, StyleSheet } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import Colors from '../constants/Colors';
 
@@ -7,7 +7,7 @@ import Colors from '../constants/Colors';
 const ImgPicker = props => {
 
     const verifyPermissions = () => {
-        
+
     }
 
     const takeImageHandler = () => { 
