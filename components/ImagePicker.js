@@ -10,7 +10,11 @@ const ImgPicker = props => {
     const verifyPermissions = () => {
        const result = await Permissions.askAsync(Permissions.CAMERA);
        if(result.status != 'granted'){
-            Alert.alert('Insufficient permissions!', 'You need to grant camera permissions to use this app.', [{ text: "Okay"}])
+            Alert.alert(
+                'Insufficient permissions!', 
+                'You need to grant camera permissions to use this app.', 
+                [{ text: "Okay"}]
+            )
        }
     }
 
