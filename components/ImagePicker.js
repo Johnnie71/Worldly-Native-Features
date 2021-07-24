@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, Text, Image, StyleSheet } from 'react-native';
+import { View, Button, Text, Image, StyleSheet, Alert } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-permissions';
 import Colors from '../constants/Colors';
@@ -10,7 +10,7 @@ const ImgPicker = props => {
     const verifyPermissions = () => {
        const result = await Permissions.askAsync(Permissions.CAMERA);
        if(result.status != 'granted'){
-           
+
        }
     }
 
