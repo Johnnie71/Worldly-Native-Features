@@ -8,7 +8,7 @@ import Colors from '../constants/Colors';
 const ImgPicker = props => {
 
     const verifyPermissions = () => {
-        Permissions.askAsync(Permissions.CAMERA);
+       const result = await Permissions.askAsync(Permissions.CAMERA);
     }
 
     const takeImageHandler = () => { 
