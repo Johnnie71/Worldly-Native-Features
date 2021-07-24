@@ -17,7 +17,7 @@ const ImgPicker = props => {
             );
         return false;
        }
-    }
+    };
 
     const takeImageHandler = () => { 
         ImagePicker.launchCameraAsync();
