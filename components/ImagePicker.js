@@ -20,7 +20,8 @@ const ImgPicker = props => {
        return true;
     };
 
-    const takeImageHandler = () => { 
+    const takeImageHandler = async () => { 
+        
         ImagePicker.launchCameraAsync();
     };
 
