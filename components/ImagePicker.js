@@ -14,7 +14,8 @@ const ImgPicker = props => {
                 'Insufficient permissions!', 
                 'You need to grant camera permissions to use this app.', 
                 [{ text: "Okay"}]
-            )
+            );
+        return false;
        }
     }
 
