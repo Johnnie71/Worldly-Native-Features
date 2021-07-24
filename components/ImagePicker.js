@@ -9,6 +9,9 @@ const ImgPicker = props => {
 
     const verifyPermissions = () => {
        const result = await Permissions.askAsync(Permissions.CAMERA);
+       if(result.status != 'granted'){
+           
+       }
     }
 
     const takeImageHandler = () => { 
