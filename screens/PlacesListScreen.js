@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Stylesheet, Platform, FlatList } from 'react-native';
+import { View, Text, Stylesheet, Platform, FlatList, StyleSheet } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { useSelector } from 'react-redux'
 
@@ -49,7 +49,7 @@ export const screenOptions = navData => {
     }
 };
 
-const styles = Stylesheet.create({
+const styles = StyleSheet.create({
     
 })
 
