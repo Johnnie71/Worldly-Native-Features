@@ -2,8 +2,8 @@ import { Platform } from 'react-native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import PlacesListScreen, {screenOptions} from '../screens/PlacesListScreen';
-import PlaceDetailScreen from '../screens/PlaceDetailScreen';
+import PlacesListScreen, { screenOptions as PlacesScreenOptions } from '../screens/PlacesListScreen';
+import PlaceDetailScreen, { screenOptions as DetailScreenOptions} from '../screens/PlaceDetailScreen';
 import NewPlaceScreen from '../screens/NewPlaceScreen';
 import MapScreen from '../screens/MapScreen';
 import Colors from '../constants/Colors';
@@ -25,11 +25,12 @@ const PlacesNavigator = props => {
                 <PlacesStackNavigator.Screen
                     name="PlacesListScreen"
                     component={PlacesListScreen}
-                    options={screenOptions}
+                    options={PlacesScreenOptions}
                 />
                 <PlacesStackNavigator.Screen
                     name="PlaceDetailScreen"
                     component={PlaceDetailScreen}
+                    options={DetailScreenOptions}
                 />
                 <PlacesStackNavigator.Screen
                     name="NewPlaceScreen"
@@ -41,7 +42,7 @@ const PlacesNavigator = props => {
                 />
             </PlacesStackNavigator.Navigator>
         </NavigationContainer>
-    )
+    );
 
 };
 
