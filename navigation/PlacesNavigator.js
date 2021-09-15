@@ -25,7 +25,18 @@ const PlacesNavigator = props => {
                 <PlacesStackNavigator.Screen
                     name="PlacesListScreen"
                     component={PlacesListScreen}
-                    options={{ title: "Places" }}
+                />
+                <PlacesStackNavigator.Screen
+                    name="PlaceDetailScreen"
+                    component={PlaceDetailScreen}
+                />
+                <PlacesStackNavigator.Screen
+                    name="NewPlaceScreen"
+                    component={NewPlaceScreen}
+                />
+                <PlacesStackNavigator.Screen
+                    name="MapScreen"
+                    component={MapScreen}
                 />
             </PlacesStackNavigator.Navigator>
         </NavigationContainer>
