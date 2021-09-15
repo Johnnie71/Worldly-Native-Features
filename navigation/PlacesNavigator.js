@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import PlacesListScreen from '../screens/PlacesListScreen';
+import PlacesListScreen, {screenOptions} from '../screens/PlacesListScreen';
 import PlaceDetailScreen from '../screens/PlaceDetailScreen';
 import NewPlaceScreen from '../screens/NewPlaceScreen';
 import MapScreen from '../screens/MapScreen';
@@ -25,6 +25,7 @@ const PlacesNavigator = props => {
                 <PlacesStackNavigator.Screen
                     name="PlacesListScreen"
                     component={PlacesListScreen}
+                    options={screenOptions}
                 />
                 <PlacesStackNavigator.Screen
                     name="PlaceDetailScreen"
