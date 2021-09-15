@@ -1,5 +1,5 @@
 import { Platform } from 'react-native';
-
+import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import PlacesListScreen from '../screens/PlacesListScreen';
@@ -21,7 +21,13 @@ const PlacesNavigator = props => {
 
     return (
         <NavigationContainer >
-
+            <PlacesStackNavigator.Navigator>
+                <PlacesStackNavigator.Screen
+                    name="PlacesListScreen"
+                    component={PlacesListScreen}
+                    options={{ title: "Places" }}
+                />
+            </PlacesStackNavigator.Navigator>
         </NavigationContainer>
     )
 
