@@ -13,7 +13,7 @@ const PlaceDetailScreen = props => {
 
 export const screenOptions = navData => {
     return {
-        headerTitle: 'Place Details'
+        headerTitle: navData.navigation.getParam('placeTitle')
     }
 };
 
