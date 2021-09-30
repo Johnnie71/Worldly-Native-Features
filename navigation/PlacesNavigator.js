@@ -22,7 +22,7 @@ const PlacesNavigator = props => {
     const scheme = useColorScheme();
 
     return (
-        <NavigationContainer theme={defaultNavigationOptions} >
+        <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme} >
             <PlacesStackNavigator.Navigator>
                 <PlacesStackNavigator.Screen
                     name="PlacesListScreen"
