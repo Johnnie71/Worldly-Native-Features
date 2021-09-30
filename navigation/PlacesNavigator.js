@@ -1,7 +1,7 @@
 import { Platform } from 'react-native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import PlacesListScreen, { screenOptions as PlacesScreenOptions } from '../screens/PlacesListScreen';
 import PlaceDetailScreen, { screenOptions as DetailScreenOptions} from '../screens/PlaceDetailScreen';
 import NewPlaceScreen from '../screens/NewPlaceScreen';
@@ -20,7 +20,7 @@ const defaultNavigationOptions = {
 const PlacesNavigator = props => {
 
     return (
-        <NavigationContainer >
+        <NavigationContainer theme={defaultNavigationOptions} >
             <PlacesStackNavigator.Navigator>
                 <PlacesStackNavigator.Screen
                     name="PlacesListScreen"
