@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { Platform, useColorScheme } from 'react-native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
@@ -18,6 +18,8 @@ const defaultNavigationOptions = {
 };
 
 const PlacesNavigator = props => {
+    //accessing system color scheme for user prefered
+    const scheme = useColorScheme();
 
     return (
         <NavigationContainer theme={defaultNavigationOptions} >
