@@ -2,9 +2,9 @@ import { Platform, useColorScheme } from 'react-native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
-import PlacesListScreen, { screenOptions as PlacesScreenOptions } from '../screens/PlacesListScreen';
+import PlacesListScreen, { screenOptions as PlacesScreenOptions, screenOptions } from '../screens/PlacesListScreen';
 import PlaceDetailScreen, { screenOptions as DetailScreenOptions} from '../screens/PlaceDetailScreen';
-import NewPlaceScreen from '../screens/NewPlaceScreen';
+import NewPlaceScreen, {screenOptions as NewPlaceScreenOptions } from '../screens/NewPlaceScreen';
 import MapScreen from '../screens/MapScreen';
 import Colors from '../constants/Colors';
 
@@ -37,6 +37,7 @@ const PlacesNavigator = props => {
                 <PlacesStackNavigator.Screen
                     name="NewPlaceScreen"
                     component={NewPlaceScreen}
+                    options={NewPlaceScreenOptions}
                 />
                 <PlacesStackNavigator.Screen
                     name="MapScreen"
