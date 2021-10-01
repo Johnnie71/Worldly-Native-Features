@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Platform, FlatList, StyleSheet } from 'react-native';
+import { View, Platform, FlatList, StyleSheet } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import { useSelector } from 'react-redux';
 
@@ -43,7 +43,7 @@ export const screenOptions = navData => {
                     title='Add Place'
                     iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
                     onPress={() => {
-                        navData.navigation.navigate('New Place')
+                        navData.navigation.navigate('NewPlaceScreen')
                     }}
                 />
             </HeaderButtons>
