@@ -39,6 +39,7 @@ const NewPlaceScreen = props => {
                 />
                 <ImagePicker />
                 <Button 
+                    style={styles.saveButton}
                     title='Save Place' 
                     color={Colors.primary} 
                     onPress={savePlaceHandler}
