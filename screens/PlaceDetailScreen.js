@@ -9,9 +9,10 @@ const PlaceDetailScreen = (props) => {
 	);
 };
 
-export const screenOptions = (navData) => {
+export const screenOptions = ({ route }) => {
+	const { placeTitle } = route.params; //destructuring the params from the route
 	return {
-		headerTitle: navData.navigation.getParam("placeTitle"),
+		headerTitle: placeTitle,
 	};
 };
 
