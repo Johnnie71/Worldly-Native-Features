@@ -35,7 +35,7 @@ const ImgPicker = (props) => {
 			quality: 0.5,
 		});
 
-		console.log(image);
+		setPickedImage(image.uri);
 	};
 
 	return (
