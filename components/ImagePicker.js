@@ -6,7 +6,10 @@ import Colors from "../constants/Colors";
 
 const ImgPicker = (props) => {
 	const verifyPermissions = async () => {
-		const result = await Permissions.askAsync(Permissions.CAMERA);
+		const result = await Permissions.askAsync(
+			Permissions.CAMERA,
+			Permissions.CAMERA_ROLL
+		);
 		if (result.status != "granted") {
 			Alert.alert(
 				"Insufficient permissions!",
@@ -25,7 +28,13 @@ const ImgPicker = (props) => {
 			return;
 		}
 
-		ImagePicker.launchCameraAsync();
+		const image = await ImagePicker.launchCameraAsync({
+			allowsEditing: true,
+			aspect: [16, 9],
+			quality: 0.5,
+		});
+
+		console.log(image);
 	};
 
 	return (
