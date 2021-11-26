@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 	title: {
 		color: "black",
 		fontSize: 18,
-		marginBottom: 5,
+		marginBottom: 1,
 	},
 	placeItem: {
 		borderBottomColor: "#ccc",
