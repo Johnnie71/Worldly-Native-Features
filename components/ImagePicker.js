@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Button, Text, Image, StyleSheet, Alert } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
 import Colors from "../constants/Colors";
 
 const ImgPicker = (props) => {
+	const [pickedImage, setPickedImage] = useState();
+
 	const verifyPermissions = async () => {
 		console.log("here");
 		const result = await Permissions.askAsync(Permissions.CAMERA);
