@@ -19,7 +19,12 @@ const ImgPicker = (props) => {
 	};
 
 	const takeImageHandler = async () => {
-		await verifyPermissions();
+		const hasPermission = await verifyPermissions();
+
+		if (!hasPermission) {
+			return;
+		}
+
 		ImagePicker.launchCameraAsync();
 	};
 

@@ -27,5 +27,19 @@
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },
-  "private": true
+  "private": true,
+  "name": "great_places",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnnie71/Worldly-Native-Features.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnnie71/Worldly-Native-Features/issues"
+  },
+  "homepage": "https://github.com/Johnnie71/Worldly-Native-Features#readme",
+  "description": ""
 }

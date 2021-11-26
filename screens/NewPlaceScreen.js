@@ -36,7 +36,7 @@ const NewPlaceScreen = (props) => {
 					onChangeText={titleChangeHandler}
 					value={titleValue}
 				/>
-				{/* <ImagePicker /> */}
+				<ImagePicker />
 				<Button
 					style={styles.saveButton}
 					title="Save Place"
@@ -57,7 +57,7 @@ export const screenOptions = (navData) => {
 const styles = StyleSheet.create({
 	form: {
 		margin: 30,
-		borderWidth: 1,
+		// borderWidth: 1,
 	},
 	label: {
 		fontSize: 18,
