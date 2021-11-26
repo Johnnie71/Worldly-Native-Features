@@ -8,9 +8,8 @@ const ImgPicker = (props) => {
 	const [pickedImage, setPickedImage] = useState();
 
 	const verifyPermissions = async () => {
-		console.log("here");
 		const result = await Permissions.askAsync(Permissions.CAMERA);
-		console.log(result.status);
+
 		if (result.status != "granted") {
 			Alert.alert(
 				"Insufficient permissions!",
@@ -24,7 +23,7 @@ const ImgPicker = (props) => {
 
 	const takeImageHandler = async () => {
 		const hasPermission = await verifyPermissions();
-		console.log("here");
+
 		if (!hasPermission) {
 			return;
 		}
@@ -36,7 +35,7 @@ const ImgPicker = (props) => {
 		});
 
 		setPickedImage(image.uri);
-		props.onImageTake(image.uri);
+		props.onImageTaken(image.uri);
 	};
 
 	return (
