@@ -8,9 +8,9 @@ const ImgPicker = (props) => {
 	const [pickedImage, setPickedImage] = useState();
 
 	const verifyPermissions = async () => {
-		const result = await Permissions.askAsync(Permissions.CAMERA);
+		const { status } = await ImagePicker.requestCameraPermissionsAsync();
 
-		if (result.status != "granted") {
+		if (status != "granted") {
 			Alert.alert(
 				"Insufficient permissions!",
 				"You need to grant camera permissions to use this app.",
