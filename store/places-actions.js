@@ -1,5 +1,5 @@
 import * as FileSystem from "expo-file-system";
-import { insertPlace } from "../helpers/db";
+import { insertPlace, fetchPlaces } from "../helpers/db";
 
 export const ADD_PLACE = "ADD_PLACE";
 export const SET_PLACES = "SET_PLACES";
