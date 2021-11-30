@@ -32,3 +32,9 @@ export const addPlace = (title, image) => {
 		}
 	};
 };
+
+export const loadPLaces = () => {
+	return async (dispatch) => {
+		dispatch({ type: SET_PLACES, places: [] });
+	};
+};
