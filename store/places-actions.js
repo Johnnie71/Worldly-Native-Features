@@ -35,6 +35,13 @@ export const addPlace = (title, image) => {
 
 export const loadPLaces = () => {
 	return async (dispatch) => {
-		dispatch({ type: SET_PLACES, places: [] });
+		try {
+			const dbResult = await fetchPlaces();
+			console.log(dbResult);
+			dispatch({ type: SET_PLACES, places: [] });
+		} catch (err) {
+			console.log(err);
+			throw err;
+		}
 	};
 };
