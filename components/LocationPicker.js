@@ -7,6 +7,7 @@ import {
 	Alert,
 	StyleSheet,
 } from "react-native";
+import Colors from "../constants/Colors";
 
 const LocationPicker = () => {
 	return (
@@ -14,7 +15,7 @@ const LocationPicker = () => {
 			<View>
 				<Text>No location chosen yet!</Text>
 			</View>
-			<Button />
+			<Button title="Get user location" color={Colors.primary} />
 		</View>
 	);
 };
