@@ -13,8 +13,8 @@ const LocationPicker = () => {
 	const getLocationHandler = () => {};
 
 	return (
-		<View>
-			<View>
+		<View style={styles.locationPicker}>
+			<View style={styles.mapPreview}>
 				<Text>No location chosen yet!</Text>
 			</View>
 			<Button
@@ -26,6 +26,16 @@ const LocationPicker = () => {
 	);
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+	locationPicker: {
+		marginBottom: 15,
+	},
+	mapPreview: {
+		marginBottom: 10,
+		width: "100%",
+		height: 150,
+		borderColor: "#ccc",
+	},
+});
 
 export default LocationPicker;
