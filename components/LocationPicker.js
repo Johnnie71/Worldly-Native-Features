@@ -16,7 +16,7 @@ const LocationPicker = () => {
 	const [isFetching, setIsFetching] = useState(false);
 
 	const verifyPermissions = async () => {
-		const { status } = await Location.getForegroundPermissionsAsync();
+		const { status } = await Location.requestForegroundPermissionsAsync();
 
 		if (status != "granted") {
 			Alert.alert(
@@ -30,6 +30,7 @@ const LocationPicker = () => {
 	};
 	const getLocationHandler = async () => {
 		const hasPermission = await verifyPermissions();
+
 		if (!hasPermission) {
 			return;
 		}
