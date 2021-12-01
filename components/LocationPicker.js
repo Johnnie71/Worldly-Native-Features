@@ -12,6 +12,8 @@ import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 
 const LocationPicker = () => {
+	const [location, setLocation] = useState();
+
 	const verifyPermissions = async () => {
 		const { status } = await Location.getForegroundPermissionsAsync();
 
@@ -35,6 +37,8 @@ const LocationPicker = () => {
 			const location = await Location.getCurrentPositionAsync({
 				timeout: 5000,
 			});
+			console.log(location);
+			setLocation(null);
 		} catch (err) {
 			console.log(err);
 			Alert.alert(
