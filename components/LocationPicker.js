@@ -13,6 +13,7 @@ import * as Permissions from "expo-permissions";
 
 const LocationPicker = () => {
 	const [location, setLocation] = useState();
+	const [isFetching, setIsFetching] = useState(false);
 
 	const verifyPermissions = async () => {
 		const { status } = await Location.getForegroundPermissionsAsync();
@@ -34,6 +35,7 @@ const LocationPicker = () => {
 		}
 
 		try {
+			setIsFetching(true);
 			const location = await Location.getCurrentPositionAsync({
 				timeout: 5000,
 			});
@@ -47,12 +49,17 @@ const LocationPicker = () => {
 				[{ text: "Okay" }]
 			);
 		}
+		setIsFetching(false);
 	};
 
 	return (
 		<View style={styles.locationPicker}>
 			<View style={styles.mapPreview}>
-				<Text>No location chosen yet!</Text>
+				{isFetching ? (
+					<ActivityIndicator size="large" color={Colors.primary} />
+				) : (
+					<Text>No location chosen yet!</Text>
+				)}
 			</View>
 			<Button
 				title="Get user location"
