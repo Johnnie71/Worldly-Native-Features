@@ -8,9 +8,42 @@ import {
 	StyleSheet,
 } from "react-native";
 import Colors from "../constants/Colors";
+import * as Location from "expo-location";
+import * as Permissions from "expo-permissions";
 
 const LocationPicker = () => {
-	const getLocationHandler = () => {};
+	const verifyPermissions = async () => {
+		const { status } = await Location.getForegroundPermissionsAsync();
+
+		if (status != "granted") {
+			Alert.alert(
+				"Insufficient permissions!",
+				"You need to grant location permissions to use this app.",
+				[{ text: "Okay" }]
+			);
+			return false;
+		}
+		return true;
+	};
+	const getLocationHandler = async () => {
+		const hasPermission = await verifyPermissions();
+		if (!hasPermission) {
+			return;
+		}
+
+		try {
+			const location = await Location.getCurrentPositionAsync({
+				timeout: 5000,
+			});
+		} catch (err) {
+			console.log(err);
+			Alert.alert(
+				"Could not fetch location!",
+				"Please try again later or pick a location on the map!",
+				[{ text: "Okay" }]
+			);
+		}
+	};
 
 	return (
 		<View style={styles.locationPicker}>
