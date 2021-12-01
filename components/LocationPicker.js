@@ -40,8 +40,10 @@ const LocationPicker = () => {
 			const location = await Location.getCurrentPositionAsync({
 				timeout: 5000,
 			});
-			console.log(location);
-			setLocation(null);
+			setLocation({
+				lat: location.coords.latitude,
+				lng: location.coords.longitude,
+			});
 		} catch (err) {
 			console.log(err);
 			Alert.alert(
